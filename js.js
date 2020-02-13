@@ -10,9 +10,7 @@ function miniCal() {
     let withTip = (billPaid * percentage/100);
     individualPayment = (withTip + billPaid) / noPeople;
     
-    
-    console.log(billPaid);
-    document.getElementById("billResult").innerHTML = individualPayment;
+    document.getElementById("billResult").innerHTML = individualPayment.toFixed(2) + " " + "Per Person";
     
 }
 

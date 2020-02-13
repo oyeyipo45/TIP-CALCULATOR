@@ -4,24 +4,30 @@
     box-sizing: border-box;
 }
 .wrap{
-
-    background-color: blanchedalmond;
-    height: 20rem;
-    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
+
+#main{
+    
+    background-color:blueviolet;
+    height: 20rem;
+    width: 16rem;
+    padding: 2rem;
+    border-radius: 2%;
+    color: white;
+}
+
 
 .calButton, .select, .price, .people{
     margin: 1.5rem 0rem;
 }
 
-
-#main{
-    /* left: 15rem;
-    top: 10rem; */
-    background-color: aqua;
-    height: 20rem;
-    padding: 2rem;
-    border-radius: 2%;
+#billPrice, #noPeople{
+    width: 6rem;
 }
 
 
@@ -33,14 +39,28 @@
 }
 
 
-#calculate{
+.price, .select, .people{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.calButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#calculate, #Reset{
     padding: .3rem;
     color: rgb(243, 243, 245);
-    background-color: black;
+    background-color: blueviolet;
     margin: 0rem 1rem;
+    color: white;
 }
 
 #billResult{
+    color: black;
     background-color: cornsilk;
 }
-
