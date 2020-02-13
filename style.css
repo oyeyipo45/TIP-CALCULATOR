@@ -3,29 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrap{
+
+    background-color: blanchedalmond;
+    height: 20rem;
+    width: 20rem;
+}
+
+.calButton, .select, .price, .people{
+    margin: 1.5rem 0rem;
+}
+
+
 #main{
-
-    display: block;
-    align-items: center;
-    justify-content: space-evenly;
+    /* left: 15rem;
+    top: 10rem; */
     background-color: aqua;
-    height: 4rem;
-
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 2%;
 }
 
-.bill-price, .number-people{
-    width: 4rem;
-}
-
-#bill-result {
-    width: 4rem;
-}
 
 #search-value{
     display: block;
     justify-content: space-around;
     align-items: center;
-    width:30%;
+    width:100%;
 }
 
 
@@ -33,6 +37,10 @@
     padding: .3rem;
     color: rgb(243, 243, 245);
     background-color: black;
+    margin: 0rem 1rem;
 }
 
+#billResult{
+    background-color: cornsilk;
+}
 
