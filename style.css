@@ -21,6 +21,12 @@
     color: white;
 }
 
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
 
 .calButton, .select, .price, .people{
     margin: 1.5rem 0rem;
@@ -52,7 +58,7 @@
     align-items: center;
 }
 
-#calculate, #Reset{
+#calculate, #reset{
     padding: .3rem;
     color: rgb(243, 243, 245);
     background-color: blueviolet;

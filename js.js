@@ -1,11 +1,11 @@
 function miniCal() {
-
+  //GETTING ALL THE VALUES FROM THE DOM
   let billPaid = parseInt(document.getElementById("billPrice").value);
   let percentage = parseInt(document.getElementById("tip").value);
   let noPeople = parseInt(document.getElementById("noPeople").value);
-  //GETTING ALL THE VALUES FROM THE DOM
+  
     
-
+  //CALCULATING THE TIP
     let individualPayment = 0;
     let withTip = (billPaid * percentage/100);
     individualPayment = (withTip + billPaid) / noPeople;
@@ -14,6 +14,20 @@ function miniCal() {
     
 }
 
-let button = document.getElementById("calculate");
+//FUNCTION TO CLEAR THE CALCULATOR
+function resetMove() {
+  document.getElementById("billPrice").value= "";
+  document.getElementById("tip").value= "";
+  document.getElementById("noPeople").value= "";
+  document.getElementById("billResult").innerHTML = "";
+}
 
-button.addEventListener("click", miniCal);
+
+//DECLEARING THE BUTTONS
+let buttonCalculate = document.getElementById("calculate");
+let buttonReset = document.getElementById("reset");
+
+
+//EVENT LISTENERS
+buttonCalculate.addEventListener("click", miniCal);
+buttonReset.addEventListener("click", resetMove);
