@@ -9,8 +9,10 @@ function miniCal() {
     let individualPayment = 0;
     let withTip = (billPaid * percentage/100);
     individualPayment = (withTip + billPaid) / noPeople;
+    totalBill = withTip + billPaid;
     
-    document.getElementById("billResult").innerHTML = individualPayment.toFixed(2) + " " + "Per Person";
+    document.getElementById("billResult").innerHTML = "$" + individualPayment.toFixed(2) + " " + "Per Person";
+    document.getElementById("totalBillResult").innerHTML = "$" +  totalBill.toFixed(2);
     
 }
 
@@ -20,6 +22,7 @@ function resetMove() {
   document.getElementById("tip").value= "";
   document.getElementById("noPeople").value= "";
   document.getElementById("billResult").innerHTML = "";
+  document.getElementById("totalBillResult").innerHTML = "";
 }
 
 

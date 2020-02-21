@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .wrap{
     display: flex;
     justify-content: center;
@@ -14,11 +15,15 @@
 #main{
     
     background-color:blueviolet;
-    height: 20rem;
-    width: 16rem;
+    height: 23rem;
+    width: 22rem;
     padding: 2rem;
     border-radius: 2%;
     color: white;
+}
+
+.defaultBill{
+    color: black;
 }
 
 .heading{
@@ -32,8 +37,9 @@
     margin: 1.5rem 0rem;
 }
 
-#billPrice, #noPeople{
-    width: 6rem;
+#billPrice, #noPeople, #tip{
+    width: 8rem;
+        height: 1.5rem;
 }
 
 
@@ -64,14 +70,45 @@
     background-color: blueviolet;
     margin: 0rem 1rem;
     color: white;
+    width: 5rem;
 }
 
 #billResult{
     color: black;
     background-color: white;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .result_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    margin-bottom: 1rem;
+    
+}
+
+p{
+    color: black;  
+    color: white;
+}
+
+#totalBill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#totalBillResult{
+    color: black;
     background-color: white;
-    height: 1.1rem;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
